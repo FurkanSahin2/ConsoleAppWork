@@ -1,0 +1,21 @@
+Reflection, programlama ve yazılım geliştirmede sıkça kullanılan bir kavramdır. Temel olarak, bir nesnenin (class) kendi yapısını ve davranışlarını analiz edebilme yeteneğine denir. "Reflection" Türkçeye "Yansıma" olarak çevrilebilir.
+
+
+Reflection, bir programın çalışma zamanında (runtime) kendi yapısını incelemesine ve değiştirmesine olanak tanır. Bu özellik, özellikle dinamik olarak oluşturulmuş sınıfların, metodların ve nesnelerin kullanılması gereken durumlarda önemli bir avantaj sağlar.
+
+
+Reflection'ın işlevleri arasında şunlar bulunur:
+
+
+Sınıf bilgilerine erişim: Bir sınıfın adı, özellikleri, metodları gibi bilgilere runtime sırasında erişim sağlayarak sınıf hakkında bilgi edinmeyi mümkün kılar.
+
+Nesne oluşturma: Reflection, bir sınıfın adını ve parametrelerini kullanarak yeni bir nesne oluşturmanıza izin verir. Bu, belirli bir sınıfın adını bilmeden çalışma zamanında nesne oluşturma gereksinimlerini karşılar.
+
+Metod çağırma: Reflection, belirli bir metodu çalışma zamanında sınıf adını ve metod adını belirterek çağırmanıza olanak tanır.
+
+Özelliklere erişim: Bir nesnenin özelliklerine (property) dinamik olarak erişebilir ve değerlerini değiştirebilirsiniz.
+
+Özniteliklerin (attribute) yönetimi: Reflection, sınıf ve metodlara iliştirilen öznitelikleri belirleyerek ve manipüle ederek kullanmanıza olanak sağlar. Bu, özellikle bazı özel durumlarda (örneğin, veri tabanı eşitleme işlemleri) kullanışlı olabilir.
+
+
+Reflection, güçlü bir araç olmakla birlikte, aşırı kullanımı ve yanlış kullanımı, kodun karmaşık hale gelmesine ve performans kayıplarına neden olabilir. Dolayısıyla, Reflection özellikle ihtiyaç olduğu durumlarda ve dikkatlice kullanılmalıdır.
