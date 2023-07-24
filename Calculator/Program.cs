@@ -4,55 +4,56 @@ namespace Calculator
 {
     public class Program
     {
+        static void Main(string[] args)
+        {
+                Console.WriteLine("Hesap Makinesi Uygulamasına Hoş Geldiniz!");
 
-         static void Main(string[] args)
-              {
-                  Console.WriteLine("Hesap Makinesi Uygulamasına Hoş Geldiniz!");
+                Console.Write("İlk Sayıyı Girin: ");
+                double sayi1 = Convert.ToDouble(Console.ReadLine());
 
-                  Console.Write("İlk Sayıyı Girin: ");
-                  double sayi1 = Convert.ToDouble(Console.ReadLine());
+                Console.Write("İkinci Sayıyı Girin: ");
+                double sayi2 = Convert.ToDouble(Console.ReadLine());
 
-                  Console.Write("İkinci Sayıyı Girin: ");
-                  double sayi2 = Convert.ToDouble(Console.ReadLine());
+                Console.Write("İşlem Türünü Seçiniz: + | - | * | / :  ");
+                char ıslemTuru = Convert.ToChar(Console.ReadLine());
 
-                  Console.Write("İşlem Türünü Seçiniz: + | - | * | / :  ");
-                  char ıslemTuru = Convert.ToChar(Console.ReadLine());
+                double sonuc = 0;
 
-                  double sonuc = 0;
-
-                  switch (ıslemTuru)
-                    {
-                      case '+':
-                         sonuc = sayi1 + sayi2;
-                         break;
+                switch (ıslemTuru)
+                {
+                        case '+':
+                        sonuc = sayi1 + sayi2;
+                        break;
+      
                         case '-':
-                            sonuc = sayi1 - sayi2;
-                            break;
+                        sonuc = sayi1 - sayi2;
+                        break;
+                
                         case '*':
-                            sonuc = sayi1 * sayi2;
-                            break;
+                        sonuc = sayi1 * sayi2;
+                        break;
+                
                         case '/':
-                            if (sayi2 != 0)
+                        if (sayi2 != 0)
                             {
                                 sonuc = sayi1 / sayi2;
                             }
-                            else
+                        else
                             {
                                 Console.WriteLine("Hata: Bölen sıfır olamaz!");
                             }
-                            break;
+                        break;
 
                         default:
                             Console.WriteLine("Hata: Geçersiz işlem türü!");
-                            break;
-                    }
+                        break;
+                }
 
-                    Console.WriteLine("Sonuç: " + sonuc);
+                Console.WriteLine("Sonuç: " + sonuc);
 
-                    Console.WriteLine("Hesap Makinesi Uygulaması Sonlandı. Çıkmak için bir tuşa basın!");
-                    Console.ReadKey();
-
-         }
+                Console.WriteLine("Hesap Makinesi Uygulaması Başarıyla Sonlandı. Çıkmak için bir tuşa basın!");
+                Console.ReadKey();
+        }
     }
 }
     
