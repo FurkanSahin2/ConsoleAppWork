@@ -31,6 +31,26 @@ namespace Reflection
             // 2. Yol:
             MethodInfo methodInfo = instance.GetType().GetMethod("Topla2");
             Console.WriteLine(methodInfo.Invoke(instance, null));
+
+            Console.WriteLine("---------------------------");
+            // Metotlara ulaşmak için:
+
+            var metotlar = tip.GetMethods();
+
+            foreach (var info in metotlar)
+            {
+                Console.WriteLine("Metot adı: {0}", info.Name);
+                foreach (var parametreInfo in info.GetParameters())
+                {
+                    Console.WriteLine("Parametre: {0}", parametreInfo.Name);
+                }
+                foreach (var attribute in info.GetCustomAttributes())
+                {
+                    Console.WriteLine("Attribute Name: {0}", attribute.GetType().Name );
+                }
+            }
+             
+            
             Console.ReadLine();
         }
     }
@@ -54,18 +74,34 @@ namespace Reflection
         {
             return sayi1 + sayi2;
         }
+
         public int Topla2()
         {
             return _sayi1 + _sayi2;
         }
+
         public int Carp(int sayi1, int sayi2)
         {
             return sayi1 * sayi2;
         }
+
+        [MetotName("Carpma")]
         public int Carp2()
         {
             return _sayi1 * _sayi2;
         }
+
+        public class MetotNameAttribute : Attribute
+        {
+            private string _carpma;
+
+            public MetotNameAttribute(string carpma)
+            {
+                _carpma = carpma; 
+            }
+        }
+
+
     }
 
 }       
