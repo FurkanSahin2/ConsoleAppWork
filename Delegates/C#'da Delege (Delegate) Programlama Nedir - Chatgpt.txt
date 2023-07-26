@@ -1,0 +1,55 @@
+C#'da "delege" (delegate) programlama kavramı, işlevsellikleri dinamik olarak değişebilen, metodları başka metotlara parametre olarak geçmek veya metotları döndürmek için kullanılan özel bir türdür. Delegeler, olay tabanlı programlamada, çoklu iş parçacığı uygulamalarında ve genel olarak fonksiyonların davranışını değiştirmek ve yeniden kullanmak için yaygın olarak kullanılır.
+
+
+C#'da delegelerin işlevleri şunlardır:
+
+
+Olay Tabanlı Programlama: Delegeler, olayları tanımlamak, tetiklemek ve yönetmek için kullanılır. Bir olay meydana geldiğinde, delegeler olaya bağlı olan metodları otomatik olarak çağırmak için kullanılır.
+
+Callback Fonksiyonları: Delegeler, bir metodu diğer bir metoda parametre olarak geçmenizi sağlar. Bu, bir metot işlemi tamamladığında, başka bir metodu otomatik olarak geri çağırmak için kullanışlıdır.
+
+LINQ (Language Integrated Query): C#'da LINQ, sorguların koleksiyonlar üzerinde yapılmasına izin verir. LINQ, delegeleri kullanarak işlevleri seçmek ve filtrelemek için kullanır.
+
+Paralel Programlama: Delegeler, çoklu iş parçacığı uygulamalarında (multithreading) görevleri paralel olarak yürütmek için kullanılır. Birden çok işlemi aynı anda çalıştırmak ve sonuçları birleştirmek için delegeleri kullanabilirsiniz.
+
+
+Aşağıda basit bir C# delegesi örneği verilmiştir:
+
+
+--------------------------------------------------
+// Delege tanımı
+delegate int MatematikselIslem(int a, int b);
+
+// Delegeyi kullanacak bir sınıf veya metot
+public class HesapMakinesi
+{
+    public int Topla(int a, int b)
+    {
+        return a + b;
+    }
+
+    public int Carp(int a, int b)
+    {
+        return a * b;
+    }
+}
+
+// Kullanımı
+class Program
+{
+    static void Main()
+    {
+        HesapMakinesi hesapMakinesi = new HesapMakinesi();
+
+        // Delege oluşturma ve metotları bağlama
+        MatematikselIslem toplamaDelegesi = hesapMakinesi.Topla;
+        MatematikselIslem carpmaDelegesi = hesapMakinesi.Carp;
+
+        // Delegeyi kullanarak metotları çağırma
+        int sonucToplama = toplamaDelegesi(5, 3); // sonucToplama = 8
+        int sonucCarpma = carpmaDelegesi(4, 6); // sonucCarpma = 24
+    }
+}
+----------------------------------------------
+
+Bu örnek, bir MatematikselIslem adlı delege tanımlar ve bu delegeyi HesapMakinesi sınıfındaki Topla ve Carp metotlarına bağlar. Daha sonra delegeleri kullanarak bu metotları çağırır ve sonuçları elde ederiz. Delegeler sayesinde, programın akışını değiştirmeden farklı matematiksel işlemleri kolayca gerçekleştirebilir ve işlevselliği dinamik olarak değiştirebiliriz.

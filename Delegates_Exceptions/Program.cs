@@ -28,7 +28,7 @@ namespace Delegates_Exceptions
             Console.WriteLine(add2(2, 6, 8));
 
             // Parametresiz - Return type metotlara delege yapmak için
-            // Syntax Versiyon - 1;
+            // Syntax Version - 1;
             Func<int> getRandomNumber = delegate ()
             {
                 Random random = new Random();
@@ -36,7 +36,7 @@ namespace Delegates_Exceptions
             };
 
 
-            // Syntax Versiyon - 2;
+            // Syntax Version - 2;
             Func<int> getRandomNumber2 = () => new Random().Next(1, 100);
 
             Console.WriteLine(getRandomNumber());
