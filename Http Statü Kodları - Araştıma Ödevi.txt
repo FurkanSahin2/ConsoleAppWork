@@ -1,0 +1,33 @@
+Soru:
+
+HTTP Statü kodlarından aşağıdakileri araştırınız. Özetinizi yoruma yazınız.
+
+200
+201
+301
+400
+401
+403
+404
+500
+502
+
+Cevap:
+
+200: Tarayıcı ve sunucu tarafında her şeyin yolunda olduğu anlamına gelen ideal durum kodudur.
+
+201: Sunucu tarafından isteğin yerine getirildiği ve yeni bir kaynak oluşturulduğu anlamına gelir.
+
+301: Bir web sayfası ya da bir kaynağın kalıcı olarak farklı bir kaynağa taşındığını ifade eden durum kodudur.
+
+400: Sunucunun tarayıcıdaki hata nedeniyle isteği işleyemediği anlamına gelen durum kodudur.
+
+401: Kullanıcının erişmek istediği kaynak için geçerli kimlik doğrulama bilgilerine sahip olmadığında döndürülen durum kodudur.
+
+403: İlgili kaynağa erişimin yasak olduğu durumlarda döndürülen durum kodudur.
+
+404: İstenen kaynağın sunucuda bulunmadığını ifade eden durum kodudur. En sık görülen HTTP durum kodlarının başında gelmektedir.
+
+500: Sunucudaki sorun nedeniyle isteğin tamamlanamadığı durumlarda görülen durum kodudur.
+
+502: Sunucunun başka bir sunucuya istek gönderdikten sonra geçersiz yanıt aldığı anlamına gelen durum kodudur.
