@@ -18,8 +18,10 @@ namespace Delegates
             //customerManager.SendMessage();
             //customerManager.ShowAlert();
 
-
             MyDelegate myDelegate = customerManager.SendMessage;
+            // Version - 2:
+            //MyDelegate myDelegate = new MyDelegate(customerManager.SendMessage);
+            
             // Eklemek için;
             myDelegate += customerManager.ShowAlert;
             // Çıkartmak için;
@@ -36,8 +38,8 @@ namespace Delegates
             
             Console.WriteLine(sonuc);
             // Consol'da 'matematik.Topla' görmezden gelindi. Çünkü bu delege bir int döndürüyor ve...
-            // eğer bir delegede 'return type' var ise consola son verdiğimiz delegeyi ekrana yazacaktır.  
-
+            // eğer bir delegenin geri dönüş tipi 'return type' ise consola son verdiğimiz delegeyi ekrana yazacaktır.  
+            
 
             myDelegate2("Hello");
             // myDelegate2("Dikkat et!");
