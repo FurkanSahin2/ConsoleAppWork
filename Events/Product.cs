@@ -39,4 +39,5 @@ namespace Events
             Console.WriteLine(" {1} Stock Amount: {0}", Stock, ProductName);
         }
     }
+    
 }

@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Security.Cryptography.X509Certificates;
 
 namespace Calculator
 {
@@ -98,7 +99,7 @@ namespace Calculator
             Console.WriteLine("Girilen sayıların toplamı: " + toplam);
             Console.ReadLine();
 
-
+            
 
 
         }
