@@ -60,6 +60,9 @@ namespace Calculator
 
 
 
+
+
+
             // Bu kodu çalıştırdığınızda, program size 5 sayı girmenizi isteyecek ve ardından bu sayıların toplamını hesaplayacak ve ekrana yazdıracaktır.
 
 
@@ -82,6 +85,58 @@ namespace Calculator
             //}
 
 
+
+
+            // C# ile Girilen Sayının Negatif Mi, Pozitif Mi Olduğunu Yazdıran Console Örneği:
+
+            //Console.WriteLine("Pozitif - Negatif sayı uygulamasına hoşgeldiniz!");
+            //Console.Write("Bir sayı giriniz: ");
+            //int sayi = Convert.ToInt32(Console.ReadLine());
+
+            //if (sayi > 0)
+            //{
+            //    Console.WriteLine("Girilen sayı pozitif bir sayıdır.");
+            //}
+            //else if (sayi == 0)
+            //{
+            //    Console.WriteLine("Girilen sayı nötr bir sayıdır.");
+            //}
+            //else
+            //{
+            //    Console.WriteLine("Girilen sayı negatif bir sayıdır.");
+            //}
+            //Console.ReadKey();
+
+
+
+
+
+
+            //C# ile Girilen Sayının Tek Mi, Çift Mi Olduğunu Yazdıran Console Örneği:
+
+
+            //Console.Write("Bir sayı girin : ");
+            //int sayi = Convert.ToInt32(Console.ReadLine());
+
+            //if (sayi % 2 == 0)
+            //{
+            //    Console.WriteLine("{0} sayısı çift bir sayıdır.", sayi);
+            //}
+            //else if (sayi % 2 == 1)
+            //{
+            //    Console.WriteLine("{0} sayısı tek bir sayıdır", sayi);
+            //}
+            //else
+            //{
+            //    Console.WriteLine("Geçersiz değer girişi...");
+            //}
+
+            //Console.ReadLine();
+
+
+
+
+
             // Bu program, kullanıcıdan bir dizi sayı girmesini isteyecek ve girilen sayıların toplamını hesaplayacaktır. Kullanıcı 0 (sıfır) girdiğinde,
             // program çalışmayı durduracak ve girilen sayıların toplamını ekrana yazdıracaktır.
 
@@ -99,7 +154,7 @@ namespace Calculator
             Console.WriteLine("Girilen sayıların toplamı: " + toplam);
             Console.ReadLine();
 
-            
+
 
 
         }
